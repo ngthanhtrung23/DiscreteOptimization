@@ -8,7 +8,7 @@ using namespace std;
 
 const int MAXN = 10111;
 const int CACHE_ROW = 20;
-const int SOLUTION = 1099893;
+const int SOLUTION = 1099870;
 const int MAXV = 10111000;
 
 int n, cap;
@@ -36,10 +36,15 @@ void getRow(int n) {
             break;
         }
     for(int i = start + 1; i <= n; ++i) {
+        double each = a[i+1].value / (double) a[i+1].weight;
+        if (i == n) each = 0;
+
         for(__typeof(f[i-1].begin()) it = f[i-1].begin(); it != f[i-1].end(); ++it) {
             int u = it->first;
 
-            if (it->second + totalRemaining[i+1] >= SOLUTION) {
+            if (it->second + totalRemaining[i+1] >= SOLUTION
+                    && it->second + (cap - u) * each >= SOLUTION
+            ) {
                 if (!f[i].count(u) || f[i][u] < it->second) {
                     f[i][u] = it->second;
                     trace[i][u] = trace[i-1][u];
@@ -48,7 +53,7 @@ void getRow(int n) {
 
             // Add current object
             if (u + a[i].weight <= cap 
-                    && it->second + (int) (upperBound[cap - u - a[i].weight])
+                    && it->second + upperBound[cap - u - a[i].weight]
                         + a[i].value >= SOLUTION
             ) {
                 int totalValue = it->second + a[i].value;
@@ -64,7 +69,7 @@ void getRow(int n) {
             cacheTrace[i] = trace[i];
         }
         cerr << "Processed " << i << " rows. Expanded: " << f[i].size() << endl;
-        f[i-1].clear(); trace[i-1].clear();
+        // f[i-1].clear(); trace[i-1].clear();
     }
 }
 
