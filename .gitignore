@@ -1,2 +1,3 @@
 *.pyc
 knapsack/tmp.data
+knapsack/dp_bound

@@ -48,7 +48,7 @@ void getRow(int n) {
 
             // Add current object
             if (u + a[i].weight <= cap 
-                    && it->second + (int) (upperBound[cap - u - a[i].weight] + 0.5)
+                    && it->second + (int) (upperBound[cap - u - a[i].weight])
                         + a[i].value >= SOLUTION
             ) {
                 int totalValue = it->second + a[i].value;
