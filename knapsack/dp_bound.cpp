@@ -8,7 +8,7 @@ using namespace std;
 
 const int MAXN = 10111;
 const int CACHE_ROW = 20;
-const int SOLUTION = 3967180;
+const int SOLUTION = 1099893;
 const int MAXV = 10111000;
 
 int n, cap;
