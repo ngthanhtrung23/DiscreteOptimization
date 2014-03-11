@@ -1,13 +1,13 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-const int MAXN = 55;
+const int MAXN = 34011;
 const double SOLUTION = 482;
-const int NPARENT = 1000;
-const int NCHILD = 500;
-const int MUTATION = 10;
-const int MUTATION_RATE = 10;
-const char* FILENAME = "output_1.txt";
+const int NPARENT = 10;
+const int NCHILD = 10;
+const int MUTATION = 3;
+const int MUTATION_RATE = 1;
+const char* FILENAME = "output_6.txt";
 
 struct Point {
     double x, y;
@@ -56,7 +56,7 @@ void save() {
 }
 
 void update(Result &optimal, const Result &current) {
-    if (current.len > optimal.len) return ;
+    if (current.len >= optimal.len) return ;
 
     cerr << "Updated to: " << current.len << endl;
     optimal.len = current.len;
@@ -128,17 +128,10 @@ void optimize() {
                         swap(child[nChild].id[x], child[nChild].id[y]);
                     }
                     else {
-                        int len = rand() % 15 + 1;
-                        int from1 = rand() % (mid-len) + 1;
-                        int to1 = from1 + len;
-                        int save[20];
-                        for(int i = from1; i <= to1; ++i) {
-                            save[i - from1] = child[nChild].id[i];
-                        }
-                        int start = from1 + rand() % len;
-                        for(int i = from1; i <= to1; ++i) {
-                            child[nChild].id[i] = save[start - from1];
-                            ++start; if (start > to1) start = from1;
+                        for(int i = 1; i <= n; ++i) {
+                            if (rand() % 100 <= MUTATION_RATE) {
+                                swap(child[nChild].id[i], child[nChild].id[rand() %i + 1]);
+                            }
                         }
                     }
                 }
@@ -153,14 +146,14 @@ void optimize() {
             for(int x = 1; x <= n; ++x)
                 parent[i].id[x] = child[i].id[x];
         }
-        for(int i = nParent; i > nParent - MUTATION; --i) {
+        for(int i = nParent; i > nParent - MUTATION && i > 0; --i) {
             for(int x = 1; x <= n; ++x)
                 if (rand() % 100 <= MUTATION_RATE) {
                     swap(parent[i].id[x], parent[i].id[rand() % x + 1]);
                 }
             parent[i].calculate();
         }
-        cerr << "Done creating parent\n";
+        // cerr << "Done creating parent\n";
 
         update(optimal, parent[1]);
     }

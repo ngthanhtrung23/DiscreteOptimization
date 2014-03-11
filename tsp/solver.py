@@ -16,7 +16,7 @@ def solve_it(input_data):
 
     # Runs the command: java Solver -file=tmp.data
 
-    process = Popen(['./copy', tmp_file_name], stdout=PIPE)
+    process = Popen(['./copy', 'output_5.txt'], stdout=PIPE)
     (stdout, stderr) = process.communicate()
 
     # removes the temporay file

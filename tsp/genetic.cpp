@@ -1,9 +1,9 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-const int MAXN = 111;
-const double SOLUTION = 21930;
-const int NPARENT = 10000;
+const int MAXN = 2011;
+const double SOLUTION = 4000111;
+const int NPARENT = 100;
 const int NCHILD = 50;
 
 struct Point {
