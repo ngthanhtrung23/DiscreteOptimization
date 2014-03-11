@@ -3,8 +3,8 @@ using namespace std;
 
 const int MAXN = 34111;
 const double SOLUTION = 482;
-const int NPARENT = 10;
-const int NCHILD = 100;
+const int NPARENT = 100;
+const int NCHILD = 10;
 
 struct Point {
     double x, y;
@@ -101,7 +101,8 @@ void optimize() {
                 for(int i = 1; i <= n; ++i)
                     child[nChild].id[i] = parent[parentId].id[i];
                 if (born > 1) {
-                    if (rand() % 2 == 0) {
+                    int dice = rand() % 4;
+                    if (dice == 0) {
                         int len = rand() % (mid / 2);
                         int from1 = rand() % (mid-len) + 1;
                         int to1 = from1 + len - 1;
@@ -112,11 +113,30 @@ void optimize() {
                         for(int x = from1, y = from2; x <= to1; ++x, ++y)
                             swap(child[nChild].id[x], child[nChild].id[y]);
                     }
-                    else {
+                    else if (dice == 1) {
                         int len = rand() % 15;
                         int from1 = rand() % (mid-len) + 1;
                         int to1 = from1 + len;
                         reverse(child[nChild].id + from1, child[nChild].id + to1);
+                    }
+                    else if (dice == 2) {
+                        int x = rand() % n + 1;
+                        int y = rand() % n + 1;
+                        swap(child[nChild].id[x], child[nChild].id[y]);
+                    }
+                    else {
+                        int len = rand() % 15 + 1;
+                        int from1 = rand() % (mid-len) + 1;
+                        int to1 = from1 + len;
+                        int save[20];
+                        for(int i = from1; i <= to1; ++i) {
+                            save[i - from1] = child[nChild].id[i];
+                        }
+                        int start = from1 + rand() % len;
+                        for(int i = from1; i <= to1; ++i) {
+                            child[nChild].id[i] = save[start - from1];
+                            ++start; if (start > to1) start = from1;
+                        }
                     }
                 }
                 child[nChild].calculate();

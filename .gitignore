@@ -2,3 +2,4 @@
 knapsack/tmp.data
 knapsack/dp_bound
 tsp/genetic
+tsp/copy
