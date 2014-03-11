@@ -1,10 +1,10 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-const int MAXN = 211;
+const int MAXN = 34111;
 const double SOLUTION = 482;
-const int NPARENT = 5000;
-const int NCHILD = 50;
+const int NPARENT = 10;
+const int NCHILD = 100;
 
 struct Point {
     double x, y;
@@ -43,6 +43,15 @@ void ans() {
     cout << endl;
 }
 
+void save() {
+    fstream fout; fout.open("output_6.txt", fstream :: out);
+    fout << (fixed) << setprecision(3) << optimal.len << " 0\n";
+    for(int i = 1; i <= n; ++i) {
+        fout << optimal.id[i] - 1 << ' ';
+    }
+    fout << endl;
+}
+
 void update(Result &optimal, const Result &current) {
     if (current.len > optimal.len) return ;
 
@@ -50,27 +59,26 @@ void update(Result &optimal, const Result &current) {
     optimal.len = current.len;
     for(int i = 1; i <= n; ++i)
         optimal.id[i] = current.id[i];
+    save();
 }
 
-bool used[MAXN];
+void load() {
+    fstream fin; fin.open("output_6.txt", fstream :: in);
+    int tmp;
+    fin >> current.len >> tmp;
+    for(int i = 1; i <= n; ++i) {
+        fin >> current.id[i];
+        ++current.id[i];
+    }
+    update(optimal, current);
+}
 
 void solve() {
-    memset(used, false, sizeof used);
-    used[7] = true;
-    current.id[1] = 7;
-
-    for(int i = 2; i <= n; ++i) {
-        double bestDist = 1e6;
-        int save = -1;
-        for(int j = 1; j <= n; ++j) {
-            double curDist = (a[i-1] - a[j]).len();
-            if (!used[j] && curDist < bestDist) {
-                bestDist = curDist;
-                save = j;
-            }
-        }
-        current.id[i] = save;
-        used[save] = true;
+    for(int i = 1; i <= n; ++i) {
+        current.id[i] = i;
+    }
+    for(int i = 1; i <= n; ++i) {
+        swap(current.id[i], current.id[rand() % i + 1]);
     }
     current.calculate();
     update(optimal, current);
@@ -140,7 +148,8 @@ int main(int argc, char** argv) {
         optimal.id[i] = i;
     }
     optimal.calculate();
-    solve();
+    load();
+    // solve();
     optimize();
     ans();
 }

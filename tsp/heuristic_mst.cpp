@@ -61,15 +61,13 @@ void merge(int u, int v) {
     lab[v] = u;
 }
 
-const int MAX_NEIGHBOUR = 500;
-
 struct Edge {
     int u, v;
     double c;
 
     Edge() {}
     Edge(int u, int v, double c) : u(u), v(v), c(c) {}
-} edges[MAXN * MAX_NEIGHBOUR];
+} edges[MAXN * MAXN];
 bool operator < (const Edge &a, const Edge &b) {
     return a.c < b.c;
 }
@@ -96,17 +94,10 @@ void dfs(int u, int fu) {
 void solve() {
     memset(lab, -1, sizeof lab);
     for(int i = 1; i <= n; ++i) {
-        set< pair<double,int> > s;
         for(int j = 1; j <= n; ++j) if (j != i) {
-            s.insert(make_pair((a[i] - a[j]).len(), j));
-            if (s.size() > MAX_NEIGHBOUR) {
-                __typeof(s.end()) it = s.end(); --it;
-                s.erase(it);
-            }
+            addEdge(i, j, (a[i] - a[j]).len());
         }
-
-        for(__typeof(s.begin()) it = s.begin(); it != s.end(); ++it)
-            addEdge(i, it->second, it->first);
+        if (i % 500 == 0) cerr << i << endl;
     }
     cerr << "Done init graph\n";
     sort(edges+1, edges+nEdge+1);
@@ -123,6 +114,7 @@ void solve() {
 
     dfs(1, -1);
     current.calculate();
+    cerr << current.len << endl;
     update(optimal, current);
 }
 
