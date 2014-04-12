@@ -1,0 +1,1300 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"cal",
+				"calculate"
+			],
+			[
+				"my",
+				"myBest"
+			],
+			[
+				"max",
+				"maxLevel"
+			],
+			[
+				"bit",
+				"bitCount"
+			],
+			[
+				"nei",
+				"neighbourJ"
+			],
+			[
+				"flow",
+				"flowToJ"
+			],
+			[
+				"neig",
+				"neighbourJ"
+			],
+			[
+				"neib",
+				"neighbourI"
+			],
+			[
+				"ne",
+				"neighbourJ"
+			],
+			[
+				"neighbour",
+				"neighbourI"
+			],
+			[
+				"flowT",
+				"flowToJ"
+			],
+			[
+				"dat",
+				"dataAdd"
+			],
+			[
+				"new",
+				"newIndex"
+			],
+			[
+				"ingre",
+				"ingredients"
+			],
+			[
+				"can",
+				"canCompressY"
+			],
+			[
+				"build",
+				"build_lca"
+			],
+			[
+				"dec",
+				"dec_fake"
+			],
+			[
+				"k",
+				"knight_id"
+			],
+			[
+				"e",
+				"echo"
+			],
+			[
+				"for",
+				"forin	for … in … done"
+			],
+			[
+				"Max",
+				"MAXT-1"
+			],
+			[
+				"gen",
+				"genRandomPair"
+			],
+			[
+				"random",
+				"randomDouble"
+			],
+			[
+				"rand",
+				"randomDouble"
+			],
+			[
+				"String",
+				"StringTokenizer"
+			],
+			[
+				"Input",
+				"InputStream"
+			],
+			[
+				"compute",
+				"computeCycleLength"
+			],
+			[
+				"t",
+				"tp	template <typename ${1:_InputIter}>"
+			],
+			[
+				"generat",
+				"generate_InPost"
+			],
+			[
+				"w",
+				"weight"
+			],
+			[
+				"alpha",
+				"alphanumeric"
+			],
+			[
+				"bin",
+				"binToDec"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"font",
+				"font-weight"
+			],
+			[
+				"mat",
+				"match_l"
+			],
+			[
+				"matc",
+				"match_r"
+			],
+			[
+				"min",
+				"minCostFlow"
+			],
+			[
+				"Push",
+				"PushRelabel"
+			],
+			[
+				"ci",
+				"city"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 98.0,
+		"selected_items":
+		[
+			[
+				"repl shell",
+				"SublimeREPL: Shell"
+			],
+			[
+				"shell ",
+				"SublimeREPL: Shell"
+			],
+			[
+				"sublime ",
+				"SublimeREPL: Shell"
+			],
+			[
+				"package install ",
+				"Package Control: Install Package"
+			],
+			[
+				"package remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"package install",
+				"Package Control: Install Package"
+			],
+			[
+				"ss bash",
+				"Set Syntax: Shell Script (Bash)"
+			],
+			[
+				"ss bas",
+				"Set Syntax: Shell Script (Bash)"
+			],
+			[
+				"Package Control: dis",
+				"Package Control: Disable Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"package",
+				"Package Control: Remove Package"
+			],
+			[
+				"zen",
+				"Set Syntax: ZenCoding"
+			],
+			[
+				"",
+				"Preferences: Key Bindings - Default"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"install pack",
+				"Package Control: Install Package"
+			],
+			[
+				"install package",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 293.0,
+		"history":
+		[
+			"getallattr(os)",
+			"getattrs(os)",
+			"listattr(os)",
+			"getattr('os')",
+			"os",
+			"os.changedir('/home/rr/ACM Training')",
+			"os.setdir('/home/rr/ACM Training')",
+			"os.list('.')",
+			"import os",
+			"os.list('.')",
+			"a",
+			"a = [1,2,3]",
+			"a = 1",
+			"a",
+			"ls"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/rr/Coursera/DiscreteOptimization/Ass/tsp/_metadata",
+		"/home/rr/Coursera/DiscreteOptimization/Ass/tsp/solver.py",
+		"/home/rr/Coursera/DiscreteOptimization/Ass/tsp/output_3.txt",
+		"/home/rr/Coursera/DiscreteOptimization/Ass/tsp/khuebeo.cpp",
+		"/home/rr/Coursera/DiscreteOptimization/Ass/tsp/output_3_backup.txt",
+		"/home/rr/Coursera/DiscreteOptimization/Ass/tsp/output_5.txt",
+		"/home/rr/Coursera/DiscreteOptimization/Ass/tsp/genetic_badStart.cpp",
+		"/home/rr/Coursera/DiscreteOptimization/Ass/tsp/output.txt",
+		"/home/rr/Coursera/DiscreteOptimization/Ass/tsp/output_1.txt",
+		"/home/rr/Coursera/DiscreteOptimization/Ass/tsp/output_5_backup.txt",
+		"/home/rr/Coursera/DiscreteOptimization/Ass/tsp/output_6.txt",
+		"/home/rr/Coursera/DiscreteOptimization/Ass/tsp/genetic_badStart",
+		"/home/rr/Coursera/DiscreteOptimization/Ass/tsp/reverse_big",
+		"/home/rr/Coursera/DiscreteOptimization/Ass/tsp/output_6_backup.txt",
+		"/home/rr/Coursera/DiscreteOptimization/Ass/tsp/DiscreteOptimization_TSP.sublime-project",
+		"/home/rr/Coursera/DiscreteOptimization/Ass/tsp/data/tsp_1000_1",
+		"/home/rr/Coursera/DiscreteOptimization/Ass/tsp/reverse_big.cpp",
+		"/home/rr/Coursera/DiscreteOptimization/Ass/tsp/output_4_backup.txt",
+		"/home/rr/Coursera/DiscreteOptimization/Ass/tsp/genetic.cpp",
+		"/home/rr/Coursera/DiscreteOptimization/Ass/tsp/genetic",
+		"/home/rr/Coursera/DiscreteOptimization/Ass/tsp/output_4.txt",
+		"/home/rr/Coursera/DiscreteOptimization/Ass/tsp/output4.txt",
+		"/home/rr/Coursera/DiscreteOptimization/Ass/tsp/output_2.txt",
+		"/home/rr/Coursera/DiscreteOptimization/Ass/tsp/output_2_backup.txt",
+		"/home/rr/Coursera/DiscreteOptimization/Ass/tsp/submit.py",
+		"/home/rr/Coursera/DiscreteOptimization/Ass/tsp/khuebeo",
+		"/home/rr/Coursera/DiscreteOptimization/Ass/tsp/data/tsp_51_1",
+		"/home/rr/Coursera/DiscreteOptimization/Ass/tsp/output_1_backup.txt",
+		"/home/rr/Coursera/DiscreteOptimization/Ass/tsp/data/tsp_5_1",
+		"/home/rr/Coursera/DiscreteOptimization/Ass/coloring/_metadata",
+		"/home/rr/Coursera/DiscreteOptimization/Ass/coloring/constraint.cpp",
+		"/home/rr/ACM Training/Codeforces/C2.in",
+		"/home/rr/ACM Training/Codeforces/output.txt",
+		"/home/rr/ACM Training/Codeforces/C2.cpp",
+		"/home/rr/ACM Training/Codeforces/map.txt",
+		"/home/rr/ACM Training/Codeforces/judge.cpp",
+		"/home/rr/ACM Training/Codeforces/C.in",
+		"/home/rr/ACM Training/Codeforces/input.txt",
+		"/home/rr/ACM Training/Codeforces/output.sol",
+		"/home/rr/ACM Training/Codeforces/gen.cpp",
+		"/home/rr/ACM Training/Codeforces/sub-src-4/C.cpp",
+		"/home/rr/ACM Training/Codeforces/C.cpp",
+		"/home/rr/ACM Training/Codeforces/judge",
+		"/home/rr/ACM Training/Codeforces/template.cpp",
+		"/home/rr/ACM Training/Codeforces/C_duyet.cpp",
+		"/home/rr/ACM Training/Codeforces/C.out",
+		"/home/rr/ACM Training/Codeforces/D.in",
+		"/home/rr/ACM Training/Codeforces/D.cpp",
+		"/home/rr/ACM Training/Codeforces/B.cpp",
+		"/home/rr/ACM Training/Codeforces/C2",
+		"/home/rr/ACM Training/Codeforces/A.cpp",
+		"/home/rr/ACM Training/Codeforces/sub-2.out",
+		"/home/rr/ACM Training/Codeforces/G.cpp",
+		"/home/rr/Projects/CSC419/final_product/data/LDA/matrix10.csv",
+		"/home/rr/ACM Training/Codeforces/F.cpp",
+		"/home/rr/ACM Training/Codeforces/E.cpp",
+		"/home/rr/ACM Training/Codeforces/H.cpp",
+		"/home/rr/ACM Training/Codeforces/H.in",
+		"/home/rr/ACM Training/Codeforces/keygen.java",
+		"/home/rr/ACM Training/Codeforces/x.cpp",
+		"/home/rr/Desktop/LUBENICA.cpp",
+		"/home/rr/ACM Training/Codeforces/problem.txt",
+		"/home/rr/ACM Training/Codeforces/D2.cpp",
+		"/home/rr/ACM Training/Codeforces/D_duyet.cpp",
+		"/home/rr/ACM Training/Codeforces/B_duyet.cpp",
+		"/home/rr/ACM Training/Codeforces/B_duyet",
+		"/home/rr/.config/sublime-text-3/Packages/SublimeREPL/SublimeREPL.sublime-settings",
+		"/home/rr/.config/sublime-text-3/Packages/User/Distraction Free.sublime-settings",
+		"/home/rr/ACM Training/Codeforces/A5.out",
+		"/home/rr/ACM Training/Codeforces/A1.out",
+		"/home/rr/ACM Training/Codeforces/A/5.in",
+		"/home/rr/ACM Training/Codeforces/A9.out",
+		"/home/rr/ACM Training/Codeforces/A10.out",
+		"/home/rr/ACM Training/Codeforces/B.java",
+		"/home/rr/ACM Training/Codeforces/B7.out",
+		"/home/rr/ACM Training/Codeforces/B6.out",
+		"/home/rr/ACM Training/Codeforces/C/0.pp",
+		"/home/rr/ACM Training/Codeforces/C/1.pp",
+		"/home/rr/ACM Training/Codeforces/C/2.pp",
+		"/home/rr/ACM Training/Codeforces/C/3.pp",
+		"/home/rr/ACM Training/Codeforces/C/5.pp",
+		"/home/rr/ACM Training/Codeforces/C/0.out",
+		"/home/rr/ACM Training/Codeforces/A2.out",
+		"/home/rr/ACM Training/Codeforces/A2.cpp",
+		"/home/rr/ACM Training/Codeforces/A/10.in",
+		"/home/rr/ACM Training/Codeforces/B5.out",
+		"/home/rr/ACM Training/Codeforces/A/0.in",
+		"/home/rr/ACM Training/Codeforces/B1.out",
+		"/home/rr/ACM Training/Codeforces/B/5.in",
+		"/home/rr/ACM Training/Codeforces/B8.out",
+		"/home/rr/ACM Training/Codeforces/B9.out",
+		"/home/rr/ACM Training/Codeforces/B10.out",
+		"/home/rr/ACM Training/Codeforces/B4.out",
+		"/home/rr/ACM Training/Codeforces/B/3.in",
+		"/home/rr/ACM Training/Codeforces/B/2.in",
+		"/home/rr/ACM Training/Codeforces/B/0.in",
+		"/home/rr/ACM Training/Codeforces/A/6.in",
+		"/home/rr/ACM Training/Codeforces/A3.out",
+		"/home/rr/ACM Training/Codeforces.sublime-workspace",
+		"/home/rr/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+		"/home/rr/.config/sublime-text-3/Packages/Default/Preferences.sublime-settings",
+		"/home/rr/ACM Training/Codeforces/d.cpp",
+		"/home/rr/ACM Training/Codeforces/d.sh",
+		"/home/rr/ACM Training/Codeforces/D_test.cpp",
+		"/home/rr/.config/sublime-text-3/Packages/User/ACM_C_Template.sublime-snippet",
+		"/home/rr/.config/sublime-text-3/Packages/Default/Default (Linux).sublime-keymap",
+		"/home/rr/ACM Training/Codeforces.sublime-project",
+		"/home/rr/ACM Training/Codeforces/10608.cpp",
+		"/home/rr/Coursera/StatsI/HW.03.txt",
+		"/home/rr/Coursera/StatsI/Lab.03.R",
+		"/home/rr/Coursera/StatsI/HW.02.txt",
+		"/home/rr/Coursera/StatsI/Lab.02.R",
+		"/home/rr/Coursera/StatisticsI/Lab.01.R",
+		"/home/rr/Coursera/CompMethod_DataAnalysis/HW1/data.mat",
+		"/home/rr/ACM Training/Codeforces/a.cpp",
+		"/home/rr/ACM Training/Codeforces/BALLGMVN.cpp",
+		"/home/rr/ACM Training/Codeforces/check.cpp",
+		"/home/rr/ACM Training/Codeforces/AZNET.cpp",
+		"/home/rr/ACM Training/Codeforces/AZNET_sol.cpp",
+		"/home/rr/ACM Training/Codeforces/LCS2X.cpp",
+		"/home/rr/ACM Training/Codeforces/JOBSET.cpp",
+		"/home/rr/ACM Training/Codeforces/MINROAD.cpp",
+		"/home/rr/ACM Training/Codeforces/rank.cpp",
+		"/home/rr/ACM Training/Codeforces/seq.sh",
+		"/home/rr/ACM Training/Codeforces/b_duyet.cpp",
+		"/home/rr/ACM Training/Codeforces/log.txt",
+		"/home/rr/ACM Training/Codeforces/b_sol.cpp",
+		"/home/rr/ACM Training/Codeforces/b_sol"
+	],
+	"find":
+	{
+		"height": 39.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"/home/rr/ACM Training/SPOJ/VOSTR",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"update\\(",
+			"optimal",
+			"111",
+			"Impossible",
+			"\\n1 3 1",
+			"3 1 1",
+			"notUsed",
+			"free",
+			"maxK",
+			"cout",
+			"0,",
+			"LL",
+			"cout << (.*) << ' ' << (.*) << endl;",
+			"cout << pos << ' ' << zero << endl;",
+			"cout << (.*) << ' ' << (.*) << endl;",
+			"<< 0",
+			"unsigned long long",
+			"long long",
+			"Frac",
+			"Int",
+			"lon1",
+			"lon2",
+			"lat1",
+			"lat2",
+			"45",
+			"25",
+			"ZERO",
+			"BigInteger",
+			"minimap",
+			"preview",
+			"== '#' &&",
+			"cor",
+			"correlation",
+			"NA",
+			"sm",
+			"psych",
+			"packa",
+			"  ",
+			"Case #",
+			"0,3",
+			"0,10",
+			"22",
+			"memset",
+			"SET\\((.*)\\);",
+			"long long",
+			"t[i]",
+			"1000",
+			"res = (max|min)(\\(.*\\));",
+			",0",
+			"f[",
+			"(fixed) << setprecision(3) << ",
+			"cur",
+			"typ[t2].x[i]",
+			"typ[t1].x[i]",
+			"  ",
+			"empty",
+			"aux",
+			"g[",
+			"1.",
+			"cout",
+			"max",
+			" \n",
+			"   ",
+			"%",
+			"long long double",
+			"double",
+			"EPS",
+			"cmp",
+			"1e-",
+			"EPS",
+			"cmp(",
+			"EPS",
+			"1e-",
+			"1e-6",
+			"1e-",
+			"double",
+			"len()",
+			"double",
+			"long double",
+			"double",
+			"long double",
+			"double",
+			"long double",
+			"  ",
+			" ",
+			"  ",
+			"];\n",
+			"   ",
+			"22",
+			"double",
+			"max",
+			"maxd",
+			"rb",
+			"cout",
+			"update(",
+			"int i1, int j1, int i2, int j2, int i3, int j3, int i4, int j4",
+			"req.",
+			"| |",
+			"canWin",
+			"\\.\\.\\.W\\n\\.\\.\\.\\.\\nB\\.\\.\\.\\nWBWB\\n",
+			"\\.\\.\\.W\\n\\.\\.\\.\\.\\nB\\.\\.\\.\\nW\\.WB\\n",
+			"a.",
+			"a.nwhite",
+			"--> 0",
+			"1 1",
+			"return ",
+			"([^.])a\\[",
+			"long long",
+			"dfs",
+			"right",
+			"left",
+			"Monst",
+			"monst",
+			"cout",
+			"cout <<",
+			"scanf",
+			"3 4   4 5   5 4   6 5",
+			"60",
+			"}",
+			"}{",
+			"next",
+			"i",
+			"bound[i]",
+			"bound[",
+			"\"-\"",
+			"314",
+			"downWall",
+			"long double"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"current",
+			"MAXN",
+			"all",
+			"notUsed",
+			"maxDollar",
+			"-1,",
+			"long long",
+			"printf(\"%.6lf %.6lf\\\\n\", $1, $2);",
+			"printf(\"%.6lf %.6lf\\n\", $1, $2);",
+			"<< zero",
+			"long long",
+			"unsigned long long",
+			"Num",
+			"long long",
+			"a.lon",
+			"b.lon",
+			"a.lon",
+			"a.lat",
+			"b.lat",
+			"ndigit",
+			"45",
+			"BigDecimal",
+			"=",
+			"    ",
+			"0,10",
+			"0,3",
+			"0,20",
+			"33",
+			"f[n0][n1][n2][mod] = $1;",
+			"unsigned long long",
+			"t",
+			"10000",
+			"5000",
+			"if (req == \"max\") res = max$2;\\n            else res = min$2;",
+			"",
+			"typ[t2][i].x",
+			"typ[t1][i].x",
+			"    ",
+			"long double",
+			"EPS",
+			"long double",
+			"double",
+			"long double",
+			"double",
+			"long double",
+			"double",
+			"    ",
+			"",
+			"    ",
+			"1011",
+			"int",
+			"nguocb",
+			"|   |",
+			"$1a.a[",
+			"int",
+			"dfs1",
+			"r",
+			"l",
+			"Monas",
+			"monas",
+			"61",
+			"},",
+			"}\\n{",
+			"nextVirus",
+			"t",
+			"bound[h]",
+			"bound[i]",
+			"bottomWall",
+			"double",
+			"B",
+			"D",
+			"   ",
+			"long double",
+			"long long",
+			"1011",
+			"all",
+			"long double",
+			"double",
+			"log2_",
+			"MN",
+			"g",
+			"int",
+			"Main.",
+			"long double",
+			"int",
+			"fabs",
+			"MAX(",
+			"MIN(",
+			".ln",
+			".nn",
+			".",
+			"right_",
+			"left_",
+			"r",
+			"l",
+			"NKBAS",
+			"\"$1\"",
+			"lld",
+			"power",
+			"scanf(\"%d\", &",
+			"scanf(\"%d\", ",
+			"sz1",
+			"save1[",
+			"r",
+			"l",
+			"",
+			"f1",
+			"long double",
+			"DIGIT",
+			"BASE",
+			"Big",
+			"",
+			"duyet.out",
+			"time ./a.out",
+			"",
+			"50000",
+			"25000",
+			"fout",
+			"link_",
+			"MAX",
+			"cout",
+			"",
+			"test == 15",
+			"st",
+			"out",
+			"10",
+			"17",
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 31.0
+	},
+	"input":
+	{
+		"height": 30.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 224.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "DiscreteOptimization_TSP.sublime-project",
+	"replace":
+	{
+		"height": 72.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"solver.py",
+				"solver.py"
+			],
+			[
+				"meta",
+				"_metadata"
+			],
+			[
+				"output3.txt",
+				"output_3.txt"
+			],
+			[
+				"output3_backup",
+				"output_3_backup.txt"
+			],
+			[
+				"khuebeo.cpp",
+				"khuebeo.cpp"
+			],
+			[
+				"output3backup",
+				"output_3_backup.txt"
+			],
+			[
+				"output_3.txt",
+				"output_3.txt"
+			],
+			[
+				"output_5backup",
+				"output_5_backup.txt"
+			],
+			[
+				"output5",
+				"output_5.txt"
+			],
+			[
+				"metadata",
+				"_metadata"
+			],
+			[
+				"badstart.cpp",
+				"genetic_badStart.cpp"
+			],
+			[
+				"output6backup",
+				"output_6_backup.txt"
+			],
+			[
+				"output6",
+				"output_6.txt"
+			],
+			[
+				"output.txt",
+				"output_1.txt"
+			],
+			[
+				"output_5.txt",
+				"output_5.txt"
+			],
+			[
+				"output6_backup",
+				"output_6_backup.txt"
+			],
+			[
+				"output6.txt",
+				"output_6.txt"
+			],
+			[
+				"geneticbadstart",
+				"genetic_badStart.cpp"
+			],
+			[
+				"khuebeo",
+				"khuebeo.cpp"
+			],
+			[
+				"genetic",
+				"genetic_badStart.cpp"
+			],
+			[
+				"output_5",
+				"output_5.txt"
+			],
+			[
+				"output4backup",
+				"output_4_backup.txt"
+			],
+			[
+				"output_4",
+				"output_4.txt"
+			],
+			[
+				"output4_backup",
+				"output_4_backup.txt"
+			],
+			[
+				"output4.txt",
+				"output_4.txt"
+			],
+			[
+				"genetic.cpp",
+				"genetic.cpp"
+			],
+			[
+				"output5.txt",
+				"output_5.txt"
+			],
+			[
+				"output4",
+				"output_4_backup.txt"
+			],
+			[
+				"output_4.txt",
+				"output_4.txt"
+			],
+			[
+				"khuebeo.cp",
+				"khuebeo.cpp"
+			],
+			[
+				"output2backup",
+				"output_2_backup.txt"
+			],
+			[
+				"output2.txt",
+				"output_2.txt"
+			],
+			[
+				"output3",
+				"output_3.txt"
+			],
+			[
+				"output2_backup",
+				"output_2_backup.txt"
+			],
+			[
+				"submit.py",
+				"submit.py"
+			],
+			[
+				"output1.txt",
+				"output_1.txt"
+			],
+			[
+				"data/51_1",
+				"data/tsp_51_1"
+			],
+			[
+				"map.txt",
+				"map.txt"
+			],
+			[
+				"c2.in",
+				"C2.in"
+			],
+			[
+				"judge.cpp",
+				"judge.cpp"
+			],
+			[
+				"judge.",
+				"judge.cpp"
+			],
+			[
+				"output.sol",
+				"output.sol"
+			],
+			[
+				"input.txt",
+				"input.txt"
+			],
+			[
+				"gen.cpp",
+				"gen.cpp"
+			],
+			[
+				"c.in",
+				"C.in"
+			],
+			[
+				"c.cpp",
+				"C2.cpp"
+			],
+			[
+				"judge",
+				"judge.cpp"
+			],
+			[
+				"cduyet",
+				"C_duyet.cpp"
+			],
+			[
+				"c_duyet.cpp",
+				"C_duyet.cpp"
+			],
+			[
+				"temp",
+				"template.cpp"
+			],
+			[
+				"gen",
+				"gen.cpp"
+			],
+			[
+				"c.out",
+				"C.out"
+			],
+			[
+				"c2.cpp",
+				"C2.cpp"
+			],
+			[
+				"b.cpp",
+				"B.cpp"
+			],
+			[
+				"sub2.out",
+				"sub-2.out"
+			],
+			[
+				"a.cpp",
+				"A.cpp"
+			],
+			[
+				"emp",
+				"template.cpp"
+			],
+			[
+				"h.cpp",
+				"H.cpp"
+			],
+			[
+				"acpp",
+				"A.cpp"
+			],
+			[
+				"x.cpp",
+				"x.cpp"
+			],
+			[
+				"in",
+				"input.txt"
+			],
+			[
+				"d.cpp",
+				"D2.cpp"
+			],
+			[
+				"b_duyet",
+				"B_duyet.cpp"
+			],
+			[
+				"b.",
+				"B.cpp"
+			],
+			[
+				"a1.out",
+				"A1.out"
+			],
+			[
+				"b.java",
+				"B.java"
+			],
+			[
+				"b7.out",
+				"B7.out"
+			],
+			[
+				"b6.out",
+				"B6.out"
+			],
+			[
+				"b5.out",
+				"B5.out"
+			],
+			[
+				"b1.out",
+				"B1.out"
+			],
+			[
+				"d.cp",
+				"d.cpp"
+			],
+			[
+				"e.cpp",
+				"E.cpp"
+			],
+			[
+				"aznetsol.cpp",
+				"AZNET_sol.cpp"
+			],
+			[
+				"lcs2x.",
+				"LCS2X.cpp"
+			],
+			[
+				"log.txt",
+				"log.txt"
+			],
+			[
+				"bsolc",
+				"b_sol.cpp"
+			],
+			[
+				"bsol",
+				"b_sol"
+			],
+			[
+				"b_in.txt",
+				"b_in.txt"
+			],
+			[
+				"aflash",
+				"a_flash.cpp"
+			],
+			[
+				"outpu5.txt",
+				"output5.txt"
+			],
+			[
+				"outpu4.txt",
+				"output4.txt"
+			],
+			[
+				"bduyet",
+				"b_duyet.cpp"
+			],
+			[
+				"c.txt",
+				"c.txt"
+			],
+			[
+				"b_duyet.cpp",
+				"b_duyet.cpp"
+			],
+			[
+				"tmp",
+				"template.cpp"
+			],
+			[
+				"coinsgame.out",
+				"coinsgame.out"
+			],
+			[
+				"d.pp",
+				"D.cpp"
+			],
+			[
+				"bad.txt",
+				"bad.txt"
+			],
+			[
+				"d",
+				"d.cpp"
+			],
+			[
+				"c.java",
+				"C.java"
+			],
+			[
+				"b",
+				"B2.cpp"
+			],
+			[
+				"k2.cpp",
+				"K2.cpp"
+			],
+			[
+				"k.cpp",
+				"K.cpp"
+			],
+			[
+				"tep",
+				"template.cpp"
+			],
+			[
+				"b2.cpp",
+				"B2.cpp"
+			],
+			[
+				"g.cpp",
+				"G.cpp"
+			],
+			[
+				"i.cpp",
+				"I.cpp"
+			],
+			[
+				"j.cpp",
+				"J.cpp"
+			],
+			[
+				"b3.cpp",
+				"B3.cpp"
+			],
+			[
+				"ouptut.sol",
+				"output.sol"
+			],
+			[
+				"l.cpp",
+				"L.cpp"
+			],
+			[
+				"h1out",
+				"h-1.out"
+			],
+			[
+				"h1.out",
+				"h-1.out"
+			],
+			[
+				"h1.in",
+				"h-1.in"
+			],
+			[
+				"h-1.out",
+				"h-1.out"
+			],
+			[
+				"ouptut.txt",
+				"output.txt"
+			],
+			[
+				"d.out",
+				"d.out"
+			],
+			[
+				"d.in",
+				"d.in"
+			],
+			[
+				"facebook.cpp",
+				"facebook.cpp"
+			],
+			[
+				"equation.out",
+				"equation.out"
+			],
+			[
+				"game.out",
+				"game.out"
+			],
+			[
+				"lang",
+				"language.out"
+			],
+			[
+				"hanoi.out",
+				"hanoi.out"
+			],
+			[
+				"japanese.out",
+				"japanese.out"
+			],
+			[
+				"output.tx",
+				"output.txt"
+			],
+			[
+				"i18n.out",
+				"i18n.out"
+			],
+			[
+				"building.out",
+				"building.out"
+			],
+			[
+				"ants.out",
+				"ants.out"
+			],
+			[
+				"tem",
+				"template.cpp"
+			],
+			[
+				"cold",
+				"C_old.cpp"
+			],
+			[
+				"c_old.cpp",
+				"C_old.cpp"
+			],
+			[
+				"f.cpp",
+				"F.cpp"
+			],
+			[
+				"ouptu.txt",
+				"output.txt"
+			],
+			[
+				"gen2.",
+				"gen2.cpp"
+			],
+			[
+				"gen2",
+				"gen2"
+			],
+			[
+				"check.cpp",
+				"check.cpp"
+			],
+			[
+				"inp",
+				"input.txt"
+			],
+			[
+				"te",
+				"template.cpp"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"~/ACM Training/VOJ.sublime-project"
+			],
+			[
+				"course",
+				"~/Coursera/Coursera.sublime-workspace"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 270.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+		"max_columns": 2
+	}
+}

@@ -16,13 +16,17 @@ def solve_it(input_data):
 
     # Runs the command: java Solver -file=tmp.data
 
-    process = Popen(['./brute_degreeOrdering', tmp_file_name], stdout=PIPE)
-    (stdout, stderr) = process.communicate()
+    # process = Popen(['./constraint', tmp_file_name], stdout=PIPE)
+    # (stdout, stderr) = process.communicate()
 
     # removes the temporay file
     os.remove(tmp_file_name)
 
-    return stdout.strip()
+    # return stdout.strip()
+    f = open('output.txt')
+    output_data = f.read()
+    f.close()
+    return output_data.strip()
 
 
 import sys

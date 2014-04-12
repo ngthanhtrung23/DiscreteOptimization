@@ -1,13 +1,13 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-const int MAXN = 34011;
-const double SOLUTION = 482;
+const int MAXN = 211;
+const double SOLUTION = 30000;
 const int NPARENT = 10;
-const int NCHILD = 10;
-const int MUTATION = 3;
-const int MUTATION_RATE = 1;
-const char* FILENAME = "output_6.txt";
+const int NCHILD = 1000;
+const int MUTATION = 50;
+const int MUTATION_RATE = 50;
+const char* FILENAME = "output_3.txt";
 
 struct Point {
     double x, y;
@@ -55,14 +55,17 @@ void save() {
     fout << endl;
 }
 
+bool optimalUpdated;
+
 void update(Result &optimal, const Result &current) {
     if (current.len >= optimal.len) return ;
 
-    cerr << "Updated to: " << current.len << endl;
+    cerr << "\nUpdated to: " << current.len << endl;
     optimal.len = current.len;
     for(int i = 1; i <= n; ++i)
         optimal.id[i] = current.id[i];
     save();
+    optimalUpdated = true;
 }
 
 void load() {
@@ -93,7 +96,12 @@ void optimize() {
         parent[1].id[i] = optimal.id[i];
     parent[1].calculate();
 
+    int badTurn = 0;
     for(int turn = 0; turn < 1000111000; ++turn) {
+        cerr << '.';
+        ++badTurn;
+        optimalUpdated = false;
+
         // cerr << "Start gen child\n";
         int nChild = 0;
         int mid = n / 2;
@@ -156,6 +164,10 @@ void optimize() {
         // cerr << "Done creating parent\n";
 
         update(optimal, parent[1]);
+
+        if (optimalUpdated) {
+            badTurn = 0;
+        }
     }
 }
 

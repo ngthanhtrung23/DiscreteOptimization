@@ -1,0 +1,45 @@
+Optimize a model with 2210 rows, 420210 columns and 840210 nonzeros
+Presolve removed 0 rows and 0 columns (presolve time = 5s) ...
+Presolve time: 5.92s
+Presolved: 2210 rows, 420210 columns, 840210 nonzeros
+
+MIP start did not produce a feasible solution
+
+Variable types: 0 continuous, 420210 integer (420210 binary)
+Optimize a model with 2210 rows, 420210 columns and 840210 nonzeros
+Presolved: 2210 rows, 420210 columns, 840210 nonzeros
+
+Root barrier log...
+
+Ordering time: 0.06s
+
+Barrier statistics:
+ AA' NZ     : 4.200e+05
+ Factor NZ  : 4.663e+05 (roughly 170 MBytes of memory)
+ Factor Ops : 1.046e+08 (less than 1 second per iteration)
+ Threads    : 2
+
+                  Objective                Residual
+Iter       Primal          Dual         Primal    Dual     Compl     Time
+   0   1.19916418e+11 -7.14744297e+06  3.30e+03 7.28e-12  1.62e+05     2s
+   1   4.03820135e+10 -1.17784043e+07  1.15e+03 5.82e-11  5.92e+04     2s
+   2   3.05287312e+10  7.06630617e+07  8.71e+02 9.51e-10  4.49e+04     2s
+   3   2.95867229e+10  2.53986578e+10  8.44e+02 6.06e-08  4.40e+04     2s
+   4   2.95122863e+10  3.99220942e+15  8.42e+02 6.10e-03  4.86e+04     3s
+
+Barrier performed 4 iterations in 2.72 seconds
+Infeasible model
+
+
+Root relaxation: infeasible, 0 iterations, 2.74 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 infeasible    0               - infeasible     -      -   22s
+
+Explored 0 nodes (0 simplex iterations) in 22.58 seconds
+Thread count was 2 (of 2 available processors)
+
+Model is infeasible
+Best objective -, best bound -, gap -
