@@ -4,6 +4,30 @@
 		"selected_items":
 		[
 			[
+				"thr",
+				"threshold"
+			],
+			[
+				"SOL",
+				"BEST_SOLUTION"
+			],
+			[
+				"GRB",
+				"GRBVar"
+			],
+			[
+				"Sol",
+				"SolutionGurobi2"
+			],
+			[
+				"print",
+				"printStackTrace"
+			],
+			[
+				"Gurobi",
+				"SolutionGurobi2"
+			],
+			[
 				"cal",
 				"calculate"
 			],
@@ -163,8 +187,32 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "simulatedAnnealing.cpp",
+			"settings":
+			{
+				"buffer_size": 3282,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "output.txt",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "output_4_backup.txt",
+			"settings":
+			{
+				"buffer_size": 4399,
+				"line_ending": "Unix"
+			}
+		}
 	],
-	"build_system": "",
+	"build_system": "Packages/C++/C++.sublime-build",
 	"command_palette":
 	{
 		"height": 98.0,
@@ -270,35 +318,51 @@
 	},
 	"file_history":
 	[
-		"/home/rr/Coursera/DiscreteOptimization/Ass/tsp/_metadata",
-		"/home/rr/Coursera/DiscreteOptimization/Ass/tsp/solver.py",
-		"/home/rr/Coursera/DiscreteOptimization/Ass/tsp/output_3.txt",
-		"/home/rr/Coursera/DiscreteOptimization/Ass/tsp/khuebeo.cpp",
-		"/home/rr/Coursera/DiscreteOptimization/Ass/tsp/output_3_backup.txt",
-		"/home/rr/Coursera/DiscreteOptimization/Ass/tsp/output_5.txt",
-		"/home/rr/Coursera/DiscreteOptimization/Ass/tsp/genetic_badStart.cpp",
-		"/home/rr/Coursera/DiscreteOptimization/Ass/tsp/output.txt",
-		"/home/rr/Coursera/DiscreteOptimization/Ass/tsp/output_1.txt",
-		"/home/rr/Coursera/DiscreteOptimization/Ass/tsp/output_5_backup.txt",
-		"/home/rr/Coursera/DiscreteOptimization/Ass/tsp/output_6.txt",
-		"/home/rr/Coursera/DiscreteOptimization/Ass/tsp/genetic_badStart",
-		"/home/rr/Coursera/DiscreteOptimization/Ass/tsp/reverse_big",
-		"/home/rr/Coursera/DiscreteOptimization/Ass/tsp/output_6_backup.txt",
-		"/home/rr/Coursera/DiscreteOptimization/Ass/tsp/DiscreteOptimization_TSP.sublime-project",
-		"/home/rr/Coursera/DiscreteOptimization/Ass/tsp/data/tsp_1000_1",
-		"/home/rr/Coursera/DiscreteOptimization/Ass/tsp/reverse_big.cpp",
-		"/home/rr/Coursera/DiscreteOptimization/Ass/tsp/output_4_backup.txt",
-		"/home/rr/Coursera/DiscreteOptimization/Ass/tsp/genetic.cpp",
-		"/home/rr/Coursera/DiscreteOptimization/Ass/tsp/genetic",
 		"/home/rr/Coursera/DiscreteOptimization/Ass/tsp/output_4.txt",
+		"/home/rr/Coursera/DiscreteOptimization/Ass/tsp/output.txt",
+		"/home/rr/Coursera/DiscreteOptimization/Ass/tsp/_metadata",
+		"/home/rr/Coursera/DiscreteOptimization/Ass/tsp/output_5.txt",
+		"/home/rr/Coursera/DiscreteOptimization/Ass/tsp/reverse_big.cpp",
+		"/home/rr/Coursera/DiscreteOptimization/Ass/tsp/reverse_big",
+		"/home/rr/Coursera/DiscreteOptimization/Ass/tsp/DiscreteOptimization_TSP.sublime-project",
+		"/home/rr/Coursera/DiscreteOptimization/Ass/tsp/LocalSearch/input/tsp_metadata",
+		"/home/rr/Coursera/DiscreteOptimization/Ass/tsp/three",
+		"/home/rr/Coursera/DiscreteOptimization/Ass/tsp/three.cpp",
+		"/home/rr/Coursera/DiscreteOptimization/Ass/tsp/iteratedLocalSearch.cpp",
+		"/home/rr/Coursera/DiscreteOptimization/Ass/tsp/output_4_backup.txt",
+		"/home/rr/Coursera/DiscreteOptimization/Ass/tsp/output_6.txt",
+		"/home/rr/Coursera/DiscreteOptimization/Ass/tsp/output_5_backup.txt",
+		"/home/rr/Coursera/DiscreteOptimization/Ass/tsp/output_6_backup.txt",
+		"/home/rr/Coursera/DiscreteOptimization/Ass/tsp/genetic_badStart.cpp",
+		"/home/rr/Coursera/DiscreteOptimization/Ass/tsp/genetic.cpp",
+		"/home/rr/Coursera/DiscreteOptimization/Ass/tsp/genetic_badStart",
+		"/home/rr/Coursera/DiscreteOptimization/Ass/tsp/output_1.txt",
+		"/home/rr/Coursera/DiscreteOptimization/Ass/tsp/solver.py",
+		"/home/rr/Coursera/DiscreteOptimization/Ass/tsp/SolutionGurobi2.java",
+		"/home/rr/Coursera/DiscreteOptimization/Ass/tsp/copy",
+		"/home/rr/Coursera/DiscreteOptimization/Ass/tsp/SolutionGurobi.java",
+		"/home/rr/Coursera/DiscreteOptimization/Ass/tsp/output_1_backup.txt",
+		"/home/rr/Coursera/DiscreteOptimization/Ass/tsp/search_localSearch.cpp",
+		"/home/rr/Coursera/DiscreteOptimization/Ass/tsp/search_localSearch",
+		"/home/rr/Coursera/DiscreteOptimization/Ass/tsp/submit.py",
+		"/home/rr/Coursera/DiscreteOptimization/Ass/tsp/Solution.java",
+		"/home/rr/Coursera/DiscreteOptimization/Ass/tsp/data/tsp_51_1",
+		"/home/rr/Coursera/DiscreteOptimization/Ass/tsp/data/tsp_5_1",
+		"/home/rr/Coursera/DiscreteOptimization/Ass/tsp/data/tsp_1000_1",
+		"/home/rr/Coursera/DiscreteOptimization/Ass/tsp/Gurobi.java",
+		"/home/rr/Coursera/DiscreteOptimization/Ass/tsp/output_3.txt",
+		"/home/rr/Coursera/DiscreteOptimization/Ass/tsp/output_3_backup.txt",
+		"/home/rr/Coursera/DiscreteOptimization/Ass/tsp/LocalSearch/input/output_3_backup.txt",
+		"/home/rr/Coursera/DiscreteOptimization/gurobi502/linux32/examples/java/Tsp.java",
+		"/home/rr/Coursera/DiscreteOptimization/Ass/tsp/SolutionGorubi.java",
+		"/home/rr/Coursera/DiscreteOptimization/Ass/tsp/LocalSearch/src/tsp/Solver2.java",
+		"/home/rr/Coursera/DiscreteOptimization/Ass/tsp/LocalSearch/src/tsp/Solution.java",
+		"/home/rr/Coursera/DiscreteOptimization/Ass/tsp/khuebeo.cpp",
+		"/home/rr/Coursera/DiscreteOptimization/Ass/tsp/genetic",
 		"/home/rr/Coursera/DiscreteOptimization/Ass/tsp/output4.txt",
 		"/home/rr/Coursera/DiscreteOptimization/Ass/tsp/output_2.txt",
 		"/home/rr/Coursera/DiscreteOptimization/Ass/tsp/output_2_backup.txt",
-		"/home/rr/Coursera/DiscreteOptimization/Ass/tsp/submit.py",
 		"/home/rr/Coursera/DiscreteOptimization/Ass/tsp/khuebeo",
-		"/home/rr/Coursera/DiscreteOptimization/Ass/tsp/data/tsp_51_1",
-		"/home/rr/Coursera/DiscreteOptimization/Ass/tsp/output_1_backup.txt",
-		"/home/rr/Coursera/DiscreteOptimization/Ass/tsp/data/tsp_5_1",
 		"/home/rr/Coursera/DiscreteOptimization/Ass/coloring/_metadata",
 		"/home/rr/Coursera/DiscreteOptimization/Ass/coloring/constraint.cpp",
 		"/home/rr/ACM Training/Codeforces/C2.in",
@@ -381,23 +445,7 @@
 		"/home/rr/Coursera/StatsI/HW.03.txt",
 		"/home/rr/Coursera/StatsI/Lab.03.R",
 		"/home/rr/Coursera/StatsI/HW.02.txt",
-		"/home/rr/Coursera/StatsI/Lab.02.R",
-		"/home/rr/Coursera/StatisticsI/Lab.01.R",
-		"/home/rr/Coursera/CompMethod_DataAnalysis/HW1/data.mat",
-		"/home/rr/ACM Training/Codeforces/a.cpp",
-		"/home/rr/ACM Training/Codeforces/BALLGMVN.cpp",
-		"/home/rr/ACM Training/Codeforces/check.cpp",
-		"/home/rr/ACM Training/Codeforces/AZNET.cpp",
-		"/home/rr/ACM Training/Codeforces/AZNET_sol.cpp",
-		"/home/rr/ACM Training/Codeforces/LCS2X.cpp",
-		"/home/rr/ACM Training/Codeforces/JOBSET.cpp",
-		"/home/rr/ACM Training/Codeforces/MINROAD.cpp",
-		"/home/rr/ACM Training/Codeforces/rank.cpp",
-		"/home/rr/ACM Training/Codeforces/seq.sh",
-		"/home/rr/ACM Training/Codeforces/b_duyet.cpp",
-		"/home/rr/ACM Training/Codeforces/log.txt",
-		"/home/rr/ACM Training/Codeforces/b_sol.cpp",
-		"/home/rr/ACM Training/Codeforces/b_sol"
+		"/home/rr/Coursera/StatsI/Lab.02.R"
 	],
 	"find":
 	{
@@ -414,9 +462,23 @@
 	},
 	"find_state":
 	{
-		"case_sensitive": true,
+		"case_sensitive": false,
 		"find_history":
 		[
+			"problem.",
+			"optimal",
+			"id[",
+			"!= 0",
+			"vars",
+			"-1",
+			"update\\(",
+			"path",
+			"readCurrent",
+			"BACKUP",
+			"cout",
+			"x_pos",
+			"callback",
+			"distance",
 			"update\\(",
 			"optimal",
 			"111",
@@ -530,28 +592,16 @@
 			"left",
 			"Monst",
 			"monst",
-			"cout",
-			"cout <<",
-			"scanf",
-			"3 4   4 5   5 4   6 5",
-			"60",
-			"}",
-			"}{",
-			"next",
-			"i",
-			"bound[i]",
-			"bound[",
-			"\"-\"",
-			"314",
-			"downWall",
-			"long double"
+			"cout"
 		],
 		"highlight": true,
 		"in_selection": false,
 		"preserve_case": false,
-		"regex": true,
+		"regex": false,
 		"replace_history":
 		[
+			"",
+			"x",
 			"current",
 			"MAXN",
 			"all",
@@ -677,9 +727,7 @@
 			"test == 15",
 			"st",
 			"out",
-			"10",
-			"17",
-			""
+			"10"
 		],
 		"reverse": false,
 		"show_context": true,
@@ -690,8 +738,93 @@
 	"groups":
 	[
 		{
+			"selected": 1,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "simulatedAnnealing.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3282,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								341,
+								341
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "output.txt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Djaneiro/Syntaxes/HTML (Django).tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "output_4_backup.txt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4399,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Djaneiro/Syntaxes/HTML (Django).tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -746,16 +879,172 @@
 		"selected_items":
 		[
 			[
+				"output4_backup",
+				"output_4_backup.txt"
+			],
+			[
+				"output.txt",
+				"output.txt"
+			],
+			[
+				"output4",
+				"output_4.txt"
+			],
+			[
+				"metadata",
+				"_metadata"
+			],
+			[
+				"reverse_big.cpp",
+				"reverse_big.cpp"
+			],
+			[
+				"temp",
+				"DiscreteOptimization_TSP.sublime-project"
+			],
+			[
+				"output4backup",
+				"output_4_backup.txt"
+			],
+			[
+				"output4.txt",
+				"output_4.txt"
+			],
+			[
+				"three.cpp",
+				"three.cpp"
+			],
+			[
+				"metda",
+				"_metadata"
+			],
+			[
+				"reversebig.cpp",
+				"reverse_big.cpp"
+			],
+			[
+				"output5.txt",
+				"output_5.txt"
+			],
+			[
+				"geneticbadstart.cpp",
+				"genetic_badStart.cpp"
+			],
+			[
+				"output6backup",
+				"output_6_backup.txt"
+			],
+			[
+				"output6.txt",
+				"output_6.txt"
+			],
+			[
+				"output5backup",
+				"output_5_backup.txt"
+			],
+			[
+				"genetic_bad",
+				"genetic_badStart.cpp"
+			],
+			[
+				"genetic",
+				"genetic.cpp"
+			],
+			[
+				"output5",
+				"output_5.txt"
+			],
+			[
 				"solver.py",
 				"solver.py"
+			],
+			[
+				"three",
+				"three.cpp"
 			],
 			[
 				"meta",
 				"_metadata"
 			],
 			[
+				"reverse",
+				"reverse_big.cpp"
+			],
+			[
+				"solutiongurobi",
+				"SolutionGurobi.java"
+			],
+			[
+				"output1backup",
+				"output_1_backup.txt"
+			],
+			[
+				"output1.txt",
+				"output_1.txt"
+			],
+			[
+				"searchlocalsearch",
+				"search_localSearch.cpp"
+			],
+			[
+				"solutiongurobi.java",
+				"SolutionGurobi.java"
+			],
+			[
+				"tsp511",
+				"data/tsp_51_1"
+			],
+			[
+				"tsp51",
+				"data/tsp_5_1"
+			],
+			[
+				"solution",
+				"SolutionGurobi2.java"
+			],
+			[
+				"output1",
+				"output_1.txt"
+			],
+			[
+				"solution.java",
+				"Solution.java"
+			],
+			[
+				"threecpp",
+				"three.cpp"
+			],
+			[
 				"output3.txt",
 				"output_3.txt"
+			],
+			[
+				"output3backup",
+				"output_3_backup.txt"
+			],
+			[
+				"localsearch",
+				"search_localSearch.cpp"
+			],
+			[
+				"output3",
+				"output_3.txt"
+			],
+			[
+				"solve.py",
+				"solver.py"
+			],
+			[
+				"output4.",
+				"output_4.txt"
+			],
+			[
+				"solutiong",
+				"SolutionGurobi.java"
+			],
+			[
+				"solver2.java",
+				"LocalSearch/src/tsp/Solver2.java"
 			],
 			[
 				"output3_backup",
@@ -766,10 +1055,6 @@
 				"khuebeo.cpp"
 			],
 			[
-				"output3backup",
-				"output_3_backup.txt"
-			],
-			[
 				"output_3.txt",
 				"output_3.txt"
 			],
@@ -778,28 +1063,12 @@
 				"output_5_backup.txt"
 			],
 			[
-				"output5",
-				"output_5.txt"
-			],
-			[
-				"metadata",
-				"_metadata"
-			],
-			[
 				"badstart.cpp",
 				"genetic_badStart.cpp"
 			],
 			[
-				"output6backup",
-				"output_6_backup.txt"
-			],
-			[
 				"output6",
 				"output_6.txt"
-			],
-			[
-				"output.txt",
-				"output_1.txt"
 			],
 			[
 				"output_5.txt",
@@ -810,10 +1079,6 @@
 				"output_6_backup.txt"
 			],
 			[
-				"output6.txt",
-				"output_6.txt"
-			],
-			[
 				"geneticbadstart",
 				"genetic_badStart.cpp"
 			],
@@ -822,40 +1087,16 @@
 				"khuebeo.cpp"
 			],
 			[
-				"genetic",
-				"genetic_badStart.cpp"
-			],
-			[
 				"output_5",
 				"output_5.txt"
-			],
-			[
-				"output4backup",
-				"output_4_backup.txt"
 			],
 			[
 				"output_4",
 				"output_4.txt"
 			],
 			[
-				"output4_backup",
-				"output_4_backup.txt"
-			],
-			[
-				"output4.txt",
-				"output_4.txt"
-			],
-			[
 				"genetic.cpp",
 				"genetic.cpp"
-			],
-			[
-				"output5.txt",
-				"output_5.txt"
-			],
-			[
-				"output4",
-				"output_4_backup.txt"
 			],
 			[
 				"output_4.txt",
@@ -874,20 +1115,12 @@
 				"output_2.txt"
 			],
 			[
-				"output3",
-				"output_3.txt"
-			],
-			[
 				"output2_backup",
 				"output_2_backup.txt"
 			],
 			[
 				"submit.py",
 				"submit.py"
-			],
-			[
-				"output1.txt",
-				"output_1.txt"
 			],
 			[
 				"data/51_1",
@@ -940,10 +1173,6 @@
 			[
 				"c_duyet.cpp",
 				"C_duyet.cpp"
-			],
-			[
-				"temp",
-				"template.cpp"
 			],
 			[
 				"gen",
@@ -1160,102 +1389,6 @@
 			[
 				"h1.in",
 				"h-1.in"
-			],
-			[
-				"h-1.out",
-				"h-1.out"
-			],
-			[
-				"ouptut.txt",
-				"output.txt"
-			],
-			[
-				"d.out",
-				"d.out"
-			],
-			[
-				"d.in",
-				"d.in"
-			],
-			[
-				"facebook.cpp",
-				"facebook.cpp"
-			],
-			[
-				"equation.out",
-				"equation.out"
-			],
-			[
-				"game.out",
-				"game.out"
-			],
-			[
-				"lang",
-				"language.out"
-			],
-			[
-				"hanoi.out",
-				"hanoi.out"
-			],
-			[
-				"japanese.out",
-				"japanese.out"
-			],
-			[
-				"output.tx",
-				"output.txt"
-			],
-			[
-				"i18n.out",
-				"i18n.out"
-			],
-			[
-				"building.out",
-				"building.out"
-			],
-			[
-				"ants.out",
-				"ants.out"
-			],
-			[
-				"tem",
-				"template.cpp"
-			],
-			[
-				"cold",
-				"C_old.cpp"
-			],
-			[
-				"c_old.cpp",
-				"C_old.cpp"
-			],
-			[
-				"f.cpp",
-				"F.cpp"
-			],
-			[
-				"ouptu.txt",
-				"output.txt"
-			],
-			[
-				"gen2.",
-				"gen2.cpp"
-			],
-			[
-				"gen2",
-				"gen2"
-			],
-			[
-				"check.cpp",
-				"check.cpp"
-			],
-			[
-				"inp",
-				"input.txt"
-			],
-			[
-				"te",
-				"template.cpp"
 			]
 		],
 		"width": 0.0
@@ -1265,6 +1398,14 @@
 		"height": 500.0,
 		"selected_items":
 		[
+			[
+				"facility",
+				"~/Coursera/DiscreteOptimization/Ass/facility/DiscreteOptimization_Facility.sublime-project"
+			],
+			[
+				"data",
+				"~/DataMining/DataMining.sublime-project"
+			],
 			[
 				"",
 				"~/ACM Training/VOJ.sublime-project"

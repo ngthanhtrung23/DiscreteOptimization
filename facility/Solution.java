@@ -15,7 +15,7 @@ public class Solution
 
 class Solver
 {
-    final int NFACILITY = 211;
+    final int NFACILITY = 250;
     int nFacility, nConsumer;
     double[] setupCost, allSetupCost;
     double[] capacity, allCapacity;
@@ -35,7 +35,7 @@ class Solver
         // Facility open decision variables: open[f] == 1 if facility f is open.
         GRBVar[] open = new GRBVar[nFacility];
         for (int f = 0; f < nFacility; ++f)
-            if (capacity[f] > capacityLimit && setupCost[f] > setupCostLimit) {
+            if (capacity[f] > capacityLimit && setupCost[f] <= setupCostLimit) {
                 open[f] = model.addVar(0, 1, setupCost[f], GRB.BINARY, "Open" + f);
             }
 
@@ -43,7 +43,7 @@ class Solver
         // we transport from facility i to consumer j
         GRBVar[][] go = new GRBVar[nFacility][nConsumer];
         for (int f = 0; f < nFacility; ++f)
-            if (capacity[f] > capacityLimit && setupCost[f] > setupCostLimit) {
+            if (capacity[f] > capacityLimit && setupCost[f] <= setupCostLimit) {
                 for(int c = 0; c < nConsumer; ++c) {
                     go[f][c] = model.addVar(0, 1,
                         transport[f][c],
@@ -55,11 +55,11 @@ class Solver
         // The objective is to minimize the total fixed and variable costs
         GRBLinExpr obj = new GRBLinExpr();
         for(int f = 0; f < nFacility; ++f)
-            if (capacity[f] > capacityLimit && setupCost[f] > setupCostLimit) {
+            if (capacity[f] > capacityLimit && setupCost[f] <= setupCostLimit) {
                 obj.addTerm(setupCost[f], open[f]);
             }
         for(int f = 0; f < nFacility; ++f) {
-            if (capacity[f] > capacityLimit && setupCost[f] > setupCostLimit) {
+            if (capacity[f] > capacityLimit && setupCost[f] <= setupCostLimit) {
                 for(int c = 0; c < nConsumer; ++c)
                     obj.addTerm(transport[f][c], go[f][c]);
             }
@@ -72,7 +72,7 @@ class Solver
 
         // Production constraints
         for(int f = 0; f < nFacility; ++f) {
-            if (capacity[f] > capacityLimit && setupCost[f] > setupCostLimit) {
+            if (capacity[f] > capacityLimit && setupCost[f] <= setupCostLimit) {
                 GRBLinExpr ftot = new GRBLinExpr();
                 for (int c = 0; c < nConsumer; ++c) {
                     ftot.addTerm(demand[c], go[f][c]);
@@ -87,7 +87,7 @@ class Solver
         for(int c = 0; c < nConsumer; ++c) {
             GRBLinExpr ctot = new GRBLinExpr();
             for(int f = 0; f < nFacility; ++f) {
-                if (capacity[f] > capacityLimit && setupCost[f] > setupCostLimit) {
+                if (capacity[f] > capacityLimit && setupCost[f] <= setupCostLimit) {
                     ctot.addTerm(1.0, go[f][c]);
                 }
             }
@@ -95,16 +95,35 @@ class Solver
         }
 
         // For test 4:
-        if (false) {
-            int[] good = new int[]{26, 38, 44, 51, 71, 77, 81};
-            for(int f : good) {
-                open[f].set(GRB.DoubleAttr.Start, 1.0);
+        if (true) {
+           try {
+                Scanner sc = new Scanner(new File("output_6.txt"));
+                double cost = sc.nextDouble();
+                int tmp = sc.nextInt();
+
+                boolean[] isOpened = new boolean[nFacility];
+                for(int i = 0; i < nFacility; ++i)
+                    isOpened[i] = false;
+
+                for(int i = 0; i < nConsumer; ++i) {
+                    int u = sc.nextInt();
+                    if (setupCost[u] <= setupCostLimit) {
+                        if (!isOpened[u]) {
+                            isOpened[u] = true;
+                            open[u].set(GRB.DoubleAttr.Start, 1.0);
+                        }
+                        go[u][i].set(GRB.DoubleAttr.Start, 1.0);
+                    }
+                }
             }
-        }
+            catch (IOException ex) {
+                System.out.println(":@)");
+            }
+         }
         else {
             // First, open all plants
             for (int f = 0; f < nFacility; ++f) {
-                if (capacity[f] > capacityLimit && setupCost[f] > setupCostLimit) {
+                if (capacity[f] > capacityLimit && setupCost[f] <= setupCostLimit) {
                     open[f].set(GRB.DoubleAttr.Start, 1.0);
                 }
             }
@@ -112,7 +131,7 @@ class Solver
 
         // Use barrier to solve root relaxation
         model.getEnv().set(GRB.IntParam.Method, GRB.METHOD_BARRIER);
-        model.getEnv().set(GRB.DoubleParam.TimeLimit, 100);
+        model.getEnv().set(GRB.DoubleParam.TimeLimit, 200);
 
         // Solve
         model.optimize();
@@ -122,7 +141,7 @@ class Solver
         for(int c = 0; c < nConsumer; ++c) {
             int found = -1;
             for(int f = 0; f < nFacility; ++f) {
-                if (capacity[f] > capacityLimit && setupCost[f] > setupCostLimit) {
+                if (capacity[f] > capacityLimit && setupCost[f] <= setupCostLimit) {
                     if (go[f][c].get(GRB.DoubleAttr.X) == 1.0) {
                         found = f;
                         break;
@@ -165,6 +184,7 @@ class Solver
         capacityLimit = 0;
         Arrays.sort(allSetupCost);
         setupCostLimit = allSetupCost[nFacility - NFACILITY];
+        // setupCostLimit = 50;
 
         for(int i = 0; i < nConsumer; ++i) {
             demand[i] = sc.nextDouble();

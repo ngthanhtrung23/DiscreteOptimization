@@ -1,13 +1,13 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-const int MAXN = 211;
-const double SOLUTION = 30000;
+const int MAXN = 34011;
+const double SOLUTION = 37000;
 const int NPARENT = 10;
-const int NCHILD = 1000;
-const int MUTATION = 50;
-const int MUTATION_RATE = 50;
-const char* FILENAME = "output_3.txt";
+const int NCHILD = 2;
+const int MUTATION = 0;
+const int MUTATION_RATE = 0;
+const char* FILENAME = "output_6.txt";
 
 struct Point {
     double x, y;
@@ -121,7 +121,7 @@ void optimize() {
                         int from2 = rand() % (n - mid - len) + mid + 1;
                         int to2 = from2 + len - 1;
 
-                        for(int x = from1, y = from2; x <= to1; ++x, ++y)
+                        for(int x = from1, y = to2; x <= to1; ++x, --y)
                             swap(child[nChild].id[x], child[nChild].id[y]);
                     }
                     else if (dice == 1) {

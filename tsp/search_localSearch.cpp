@@ -1,8 +1,9 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-const int MAXN = 40111;
-const double SOLUTION = 23433;
+const int MAXN = 611;
+const double SOLUTION = 37000;
+const char* FILENAME = "output_4.txt";
 
 struct Point {
     double x, y;
@@ -37,6 +38,15 @@ void ans() {
     cout << endl;
 }
 
+void save() {
+    fstream fout; fout.open(FILENAME, fstream :: out);
+    fout << (fixed) << setprecision(3) << optimal.len << " 0\n";
+    for(int i = 1; i <= n; ++i) {
+        fout << optimal.id[i] - 1 << ' ';
+    }
+    fout << endl;
+}
+
 void update(Result &optimal, const Result &current) {
     if (current.len > optimal.len) return ;
 
@@ -44,6 +54,7 @@ void update(Result &optimal, const Result &current) {
     optimal.len = current.len;
     for(int i = 1; i <= n; ++i)
         optimal.id[i] = current.id[i];
+    save();
 }
 
 bool used[MAXN];
@@ -92,6 +103,19 @@ void optimize() {
     }
 }
 
+void load() {
+    fstream fin; fin.open(FILENAME, fstream :: in);
+    int tmp;
+    fin >> current.len >> tmp;
+    for(int i = 1; i <= n; ++i) {
+        fin >> current.id[i];
+        ++current.id[i];
+    }
+    for(int i = 1; i <= 10; ++i) cout << current.id[i] << ' '; cout << endl;
+
+    current.calculate();
+}
+
 int main(int argc, char** argv) {
     cerr << (fixed) << setprecision(3);
 
@@ -100,10 +124,10 @@ int main(int argc, char** argv) {
     for(int i = 1; i <= n; ++i) {
         fin >> a[i].x >> a[i].y;
     }
-    for(int i = 1; i <= n; ++i) {
-        optimal.id[i] = i;
-    }
-    optimal.calculate();
+    load();
+    cout << current.len << endl;
+    optimal = current;
+    cout << optimal.len << endl;
     solve();
     optimize();
     ans();

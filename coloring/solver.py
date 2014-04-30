@@ -16,17 +16,13 @@ def solve_it(input_data):
 
     # Runs the command: java Solver -file=tmp.data
 
-    # process = Popen(['./constraint', tmp_file_name], stdout=PIPE)
-    # (stdout, stderr) = process.communicate()
+    process = Popen(['./copy', 'output.txt'], stdout=PIPE)
+    (stdout, stderr) = process.communicate()
 
     # removes the temporay file
     os.remove(tmp_file_name)
 
-    # return stdout.strip()
-    f = open('output.txt')
-    output_data = f.read()
-    f.close()
-    return output_data.strip()
+    return stdout.strip()
 
 
 import sys

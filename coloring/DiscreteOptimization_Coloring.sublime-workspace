@@ -262,7 +262,13 @@
 	},
 	"file_history":
 	[
+		"/home/rr/Coursera/DiscreteOptimization/Ass/coloring/output.txt",
 		"/home/rr/Coursera/DiscreteOptimization/Ass/coloring/_metadata",
+		"/home/rr/Coursera/DiscreteOptimization/Ass/coloring/Solution.java",
+		"/home/rr/Coursera/DiscreteOptimization/Ass/coloring/submit.py",
+		"/home/rr/Coursera/DiscreteOptimization/Ass/coloring/solver.py",
+		"/home/rr/Coursera/DiscreteOptimization/Ass/coloring/DiscreteOptimization_Coloring.sublime-project",
+		"/home/rr/Coursera/DiscreteOptimization/Ass/coloring/constraint",
 		"/home/rr/Coursera/DiscreteOptimization/Ass/coloring/constraint.cpp",
 		"/home/rr/ACM Training/Codeforces/C2.in",
 		"/home/rr/ACM Training/Codeforces/output.txt",
@@ -383,17 +389,11 @@
 		"/home/rr/ACM Training/Codeforces/B2.cpp",
 		"/home/rr/ACM Training/Codeforces/K3.cpp",
 		"/home/rr/ACM Training/Codeforces/K2.cpp",
-		"/usr/include/c++/4.6/bits/stl_algobase.h",
-		"/home/rr/ACM Training/Codeforces/I.cpp",
-		"/home/rr/ACM Training/Codeforces/G.cp",
-		"/home/rr/ACM Training/Codeforces/J.cpp",
-		"/home/rr/ACM Training/Codeforces/freq.cpp",
-		"/home/rr/ACM Training/Codeforces/B3.cpp",
-		"/home/rr/ACM Training/Codeforces/L.cpp"
+		"/usr/include/c++/4.6/bits/stl_algobase.h"
 	],
 	"find":
 	{
-		"height": 31.0
+		"height": 39.0
 	},
 	"find_in_files":
 	{
@@ -738,16 +738,28 @@
 		"selected_items":
 		[
 			[
+				"metadata",
+				"_metadata"
+			],
+			[
+				"submit.py",
+				"submit.py"
+			],
+			[
+				"output.txt",
+				"output.txt"
+			],
+			[
+				"solver.py",
+				"solver.py"
+			],
+			[
 				"map.txt",
 				"map.txt"
 			],
 			[
 				"c2.in",
 				"C2.in"
-			],
-			[
-				"output.txt",
-				"output.txt"
 			],
 			[
 				"judge.cpp",
@@ -1236,18 +1248,6 @@
 			[
 				"unfair.out",
 				"unfair.out"
-			],
-			[
-				"domineos",
-				"dominoes.out"
-			],
-			[
-				"dominoes",
-				"dominoes.in"
-			],
-			[
-				"ssh.out",
-				"ssh.out"
 			]
 		],
 		"width": 0.0
@@ -1257,6 +1257,10 @@
 		"height": 500.0,
 		"selected_items":
 		[
+			[
+				"tsp",
+				"~/Coursera/DiscreteOptimization/Ass/tsp/DiscreteOptimization_TSP.sublime-project"
+			],
 			[
 				"course",
 				"~/Coursera/Coursera.sublime-workspace"
@@ -1283,7 +1287,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 178.0,
+	"side_bar_width": 230.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

@@ -8,6 +8,7 @@ using namespace std;
 
 const int MAXN = 34111;
 const char* FILENAME = "output_6.txt";
+const int MUTATE = 20;
 
 struct Point {
     double x, y;
@@ -66,27 +67,55 @@ void update(Result &optimal, const Result &current) {
 
 void optimize() {
     while (true) {
-        cerr << '.';
-        bool stop = true;
-        for(int u = 2; u <= n; ++u) {
-            for(int v = n-1; v > u; --v) {
-                double t1 = (a[current.id[u-1]] - a[current.id[u]]).len()
-                        + (a[current.id[v]] - a[current.id[v+1]]).len();
-                double t2 = (a[current.id[u-1]] - a[current.id[v]]).len()
-                        + (a[current.id[u]] - a[current.id[v+1]]).len();
-                if (t1 > t2) {
-                    for(int i = u, j = v; i <= j; ++i, --j) {
-                        swap(current.id[i], current.id[j]);
+        while (true) {
+            bool stop = true;
+            for(int u = 2; u <= n; ++u) {
+                cerr << u << endl;
+                for(int v = min(n-1, u+1000); v > u; --v) {
+                    double t1 = (a[current.id[u-1]] - a[current.id[u]]).len()
+                            + (a[current.id[v]] - a[current.id[v+1]]).len();
+                    double t2 = (a[current.id[u-1]] - a[current.id[v]]).len()
+                            + (a[current.id[u]] - a[current.id[v+1]]).len();
+                    if (t1 > t2) {
+                        for(int i = u, j = v; i <= j; ++i, --j) {
+                            swap(current.id[i], current.id[j]);
+                        }
+                        current.calculate();
+                        stop = false;
                     }
-                    current.calculate();
-                    stop = false;
+                }
+                update(optimal, current);
+            }
+            if (stop) break;
+            for(int i = 1; i < n-1; ++i) {
+                if (rand() % 100 <= MUTATE) {
+                    swap(current.id[i], current.id[rand() % i]);
                 }
             }
-            cerr << u << endl;
+            current.calculate();
             update(optimal, current);
         }
-        if (stop) break;
+        for(int i = 1; i < n-1; ++i) {
+            if (rand() % 100 <= MUTATE) {
+                swap(current.id[i], current.id[rand() % i]);
+            }
+        }
+        current.calculate();
+        update(optimal, current);
     }
+}
+
+void load() {
+    fstream fin; fin.open(FILENAME, fstream :: in);
+    int tmp;
+    fin >> current.len >> tmp;
+    for(int i = 1; i <= n; ++i) {
+        fin >> current.id[i];
+        ++current.id[i];
+    }
+    for(int i = 1; i <= 10; ++i) cout << current.id[i] << ' '; cout << endl;
+
+    current.calculate();
 }
 
 int main(int argc, char** argv) {
@@ -97,11 +126,10 @@ int main(int argc, char** argv) {
     for(int i = 1; i <= n; ++i) {
         fin >> a[i].x >> a[i].y;
     }
-    for(int i = 1; i <= n; ++i) {
-        optimal.id[i] = i;
-    }
-    optimal.calculate();
-    current = optimal;
+    load();
+    cout << current.len << endl;
+    optimal = current;
+    cout << optimal.len << endl;
     optimize();
     ans();
 }
